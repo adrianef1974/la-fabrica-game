@@ -1996,7 +1996,8 @@ class FactoryPygame:
                     elif self.btn_prev.collidepoint(pos):
                         self.selected_character_index = (self.selected_character_index-1) % len(PLAYABLE_CHARACTERS)
                     elif self.btn_next_char.collidepoint(pos):
-                        self.selected_character_index = (self.selected_character_index+1) % len(PLAYABLE_CHARACTERS)                elif self.state == "playing":
+                        self.selected_character_index = (self.selected_character_index+1) % len(PLAYABLE_CHARACTERS)
+                elif self.state == "playing":
                     if self.shift_ended and self.btn_next_day.collidepoint(pos):
                         self.advance_to_next_day()
                     elif self.nearby_npc and self.btn_talk.collidepoint(pos):
